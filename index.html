@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> FIND EVENTOS
+  </title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="stylefilter.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <body>
+
+    <header>
+      <a href="#" class="logo">FIND EVENTOS</a>
+      <ul>
+        <li><a href="#intro" class="active">Inicio</a></li>
+        <li><a href="#contato">Eventos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </header>
+
+    <section id="intro">
+      <div class="info">
+        <h1>Encontre aqui o EVENTO que você TANTO procurava!</h1>
+        <p>
+          Descubra o melhor da cultura local com nosso site de filtragem de eventos.
+          Encontre shows, cinema, teatro e mais, tudo acontecendo na sua cidade.
+          Sua experiência de entretenimento personalizada começa aqui.
+        </p>
+        <a href="#contato" class="button explore">Saiba Mais</a>
+      </div>
+      <div class="split-beer">
+        <img class="beer" src="balada.png" />
+        <img class="beer" src="balada3.png" />
+        <img class="beer" src="balada1.png" />
+      </div>
+    </section>
+
+    <section id="contato">
+      <h1 style="text-align: center; margin-bottom: 50px;">Catálogo de Eventos</h1>
+      <form id="add-event-form">
+        <label style="text-align: center;" for="eventName">Nome do Evento:</label>
+        <input class="linha1" type="text" id="eventName" name="eventName">
+        <label for="eventDate">Data do Evento:</label>
+        <input type="date" id="eventDate" name="eventDate">
+        <button type="submit">Cadastrar Evento</button>
+      </form>
+      <table id="event-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Data</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Linhas da tabela serão preenchidas com os eventos -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contato">
+      <form action="">
+        <legend>Entre em contato conosco</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" autofocus id="nome">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required id="email">
+        <br><br>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="8" required></textarea>
+
+        <button class="button explore" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Não perca a oportunidade de participar do evento dos
+        seus sonhos, adquira já o seu ingresso e não fique fora
+        dessa.
+      </p>
+    </footer>
+  </body>
+  <!-- partial -->
+  <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+  <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+  <script src="./script.js"></script>
+  <script src="scriptfilter.js"></script>
+  <script src="script2.js"></script>
+  <script src="scriptapi.js"></script>
+
+
+</body>
+
+</html>
